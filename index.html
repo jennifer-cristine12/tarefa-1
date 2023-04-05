@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
       <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><h1>SISTEMA WEB</h1></li>
-          <li class="breadcrumb-item"><a href="#">Cadastrar</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Consultar</li>
+          <li class="breadcrumb-item" style="color: rgba(255, 255, 255, 0.555);">Cadastrar</li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">Consultar</a></li>
         </ol>
         
       </nav>
@@ -31,16 +31,28 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Telefone:<br></label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" >
+        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(XX)XXXXX-XXXX" >
+      </div>
+      
+      <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Origem:<br></label>
+      <select class="form-control" id="exampleFormControlInput1" class="form-select" aria-label="Default select example">
+        <option selected>Celular</option>
+        <option value="1">tablet</option>
+        <option value="2">desktop</option>
+        <option value="3">televisão</option>
+      </select>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Origem:<br></label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" >
+        <label for="exampleFormControlInput1" class="form-label">Data do contato:<br></label>
+        <input type="date" class="form-control" id="exampleFormControlInput1" >
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nome:<br></label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" >
+      <div class="mb-obs">
+        <label for="exampleFormControlInput1" class="form-label">Observação:<br></label>
+        <input type="text" class="Observacao" id="exampleFormControlInput1" >
       </div>
+      
+      <input class="btn" type="submit" value="Cadastrar">
       
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
